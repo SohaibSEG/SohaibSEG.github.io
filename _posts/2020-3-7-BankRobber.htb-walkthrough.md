@@ -1,7 +1,7 @@
 
 ---
 layout: post
-title: You're up and running!
+title: Bankrobber.htb walkthrough
 ---
 
 In this post I am trying to walk you through BankRobber (hack the box machine)
