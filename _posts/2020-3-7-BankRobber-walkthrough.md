@@ -4,6 +4,9 @@ layout: post
 title: You're up and running!
 ---
 
+In this post I am trying to walk you through BankRobber (hack the box machine)
+english is not my language so deal with it ^_^
+
 # 1-Initial Recon:
 ## nmap Tcp service scan :
 > Nmap scan report for 10.10.10.154<br/>
@@ -159,7 +162,7 @@ after surfing through directories I found this executable 'bankv2.exe' :
 ![]({{ site.baseurl }}/images/BankRobber-Writeup/12.png)
 
 I was unable to execute it or download it since I have no permission
-so I tooke a look at this :
+so I took a look at this :
 
 ![]({{ site.baseurl }}/images/BankRobber-Writeup/13.png)
 
@@ -212,7 +215,7 @@ if we try to overflow it :
 we successfully overflowed the executable path . So we can execute any executable we want
 - padding length is 32 bytes
 
-![]({{ site.baseurl }}/images/BankRobber-Writeup/18a.png)
+![]({{ site.baseurl }}/images/BankRobber-Writeup/19.png)
 
 I did put nc.exe in our users home dir since it refused to run over smb and wrote this little script to exploit it:
 
@@ -230,10 +233,10 @@ sock.interactive()
 ```
 and after runnig it :
 
-![]({{ site.baseurl }}/images/BankRobber-Writeup/18b.png)
+![]({{ site.baseurl }}/images/BankRobber-Writeup/18a.png)
 
 Bingo! we got our shell
 
-![]({{ site.baseurl }}/images/BankRobber-Writeup/19.png)
+![]({{ site.baseurl }}/images/BankRobber-Writeup/18b.png)
 
 Thanks for reading,I hope you enjoyed my first write-up .
