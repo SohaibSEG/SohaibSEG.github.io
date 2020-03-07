@@ -4,7 +4,7 @@ title: Bankrobber.htb walkthrough
 ---
 
 In this post I am trying to walk you through BankRobber (hack the box machine)
-english is not my language so deal with it ^_^
+
 
 # 1-Initial Recon:
 ## nmap Tcp service scan :
@@ -239,3 +239,5 @@ Bingo! we got our shell
 ![]({{ site.baseurl }}/images/BankRobber-Writeup/18b.png)
 
 Thanks for reading,I hope you enjoyed my first write-up .
+
+![](https://www.hackthebox.eu/badge/image/22395)
