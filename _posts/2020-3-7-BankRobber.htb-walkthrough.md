@@ -6,8 +6,8 @@ title: Bankrobber.htb walkthrough
 In this post I am trying to walk you through BankRobber (hack the box machine)
 
 
-# 1-Initial Recon:
-## nmap Tcp service scan :
+## 1-Initial Recon:
+### nmap Tcp service scan :
 ```
 Nmap scan report for 10.10.10.154
 Host is up (0.15s latency).
@@ -91,7 +91,7 @@ after trying to send some Crypto to a random id this alert pops up:
 
 So the admin can review our request, here... the first thing to think about should be client side attacks such as xss to steal admin’s cookies
 
-# 2-User Access
+## 2-User Access
 
 I did setup a local http server using python:
 
@@ -156,7 +156,7 @@ after some minutes I got my callback :
 
 ![]({{ site.baseurl }}/images/BankRobber-Writeup/11.png)
 
-# 3-Privileges Escalation:
+## 3-Privileges Escalation:
 
 after surfing through directories I found this executable 'bankv2.exe' :
 
