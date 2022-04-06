@@ -9,11 +9,15 @@
 body{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
     background-color: hsl(216, 12%, 8%);
 }
 
 .attribution{
+    position:absolute;
+    bottom:0;
     margin: 1em;
     color: #eee;
 }
@@ -30,7 +34,7 @@ body{
 /*global*/
 
 .container{
-    margin: auto;
+    margin: 1em;
     display: flex;
     align-items: center;
     background: linear-gradient(0deg,hsl(216, 26%, 15%),hsl(214, 25%, 17%));
