@@ -20,7 +20,7 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://SohaibSEG.github.io/challenges/advice-generator-app-main)
+- Live Site URL: [github pages](https://SohaibSEG.github.io/challenges/advice-generator-app-main)
 
 ## My process
 
