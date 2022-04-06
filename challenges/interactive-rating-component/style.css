@@ -52,7 +52,8 @@ body{
 .active .alert{
     width: 100%;
 }
-.container h2{
+.container h1{
+    font-size: x-large;
     margin-top: 1em;
     color: white;
     font-weight: 700;
