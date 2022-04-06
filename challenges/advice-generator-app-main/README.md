@@ -15,13 +15,12 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](https://github.com/SohaibSEG/SohaibSEG.github.io/raw/master/challenges/advice-generator-app-main/screenshot.jpeg)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://SohaibSEG.github.io/challenges/advice-generator-app-main)
 
 ## My process
 
