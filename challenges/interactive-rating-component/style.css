@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Overpass,sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: hsl(216, 12%, 8%);
+}
+
+.attribution{
+    margin: 1em;
+    color: #eee;
+}
+
+.hidden{
+    display: none;
+}
+/*thank you*/
+
+.thanks{
+    text-align: center;
+}
+
+/*global*/
+
+.container{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(0deg,hsl(216, 26%, 15%),hsl(214, 25%, 17%));
+    max-width: 24em;
+    min-width: 16em;
+    padding: 1.5em 2em;
+    border-radius: 12pt;
+}
+
+.alert{
+    margin-top: 1.5em;
+    padding: .5em;
+    text-align: center;
+    display: inline-block;
+    background-color: hsl(213, 19%, 18%);
+    color: hsl(25, 97%, 53%);
+    border-radius: 4em;
+}
+.active .alert{
+    width: 100%;
+}
+.container h1{
+    margin-top: 1em;
+    color: white;
+    font-weight: 700;
+}
+.message {
+    margin-top: .5em;
+    color: hsl(217, 12%, 63%);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/*active*/
+
+.circle{
+    text-align: center;
+    color: hsl(217, 12%, 63%);
+    box-sizing: content-box;
+    padding: 1em;
+    width: 1em;
+    line-height: 1.2;
+    margin: .5em;
+    border-radius: 4em;
+    background-color: hsl(213, 19%, 18%);
+}
+.container ul {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+.star{
+    margin: 0;
+}
+
+.container ul li{
+    display: inline-block;
+    text-decoration: none;
+}
+.container ul li:hover{
+    cursor: pointer;
+    color: white;
+    background-color: hsl(25, 97%, 53%);
+}
+.selected{
+    color: white;
+    background-color: hsl(216, 12%, 54%);
+
+}
+.bu-submit{
+    
+    font-size: 12pt;
+    color: #fff;
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+    border-radius: 5em;
+    outline: none;
+    padding: .8em;
+    width: 100%;
+    margin-top: 1em;
+}
+
+.bu-submit:hover , .bu-submit:active{
+    cursor: pointer;
+    background-color: #fff;
+    color: hsl(25, 97%, 53%);
+}
