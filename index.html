@@ -11,28 +11,30 @@
     <!--Navigation-->
     <nav>
         <ul class="links">
-            <li><a href="#">works</a></li>
-            <li><a href="#">contact</a></li>
+            <li><a href="#projects">works</a></li>
         </ul>
         <img src="img/logo.svg" alt="" class="logo" >
         <ul class="social">
-            <li><img src="img/social/gh.svg" alt="github" height="24px" width="24px"></li>
-            <li><img src="img/social/in.svg" alt="linkedin" height="24px" width="24px"></li>
-            <li><img src="img/social/fb.svg" alt="facebook" height="24px" width="24px"></li>
-            <li><img src="img/social/tw.svg" alt="twitter" height="24px" width="24px"></li>
+            <li><a href="https://www.facebook.com/sohaib.segueni.1"> <img src="img/social/gh.svg" alt="github" height="24px" width="24px"></a></li>
+            <li><a href="https://www.linkedin.com/in/sohaib-segueni-4385291a4/"> <img src="img/social/in.svg" alt="linkedin" height="24px" width="24px"></a></li>
+            <li><a href="https://www.facebook.com/sohaib.segueni.1"> <img src="img/social/fb.svg" alt="facebook" height="24px" width="24px"></a></li>
         </ul>
     </nav>
-    <!--main-section-->
+    <!--main-
+    fb : https://www.facebook.com/sohaib.segueni.1
+    linkedin : https://www.linkedin.com/in/sohaib-segueni-4385291a4/
+    github : https://github.com/SohaibSEG/
+    -->
     <main class="main">
         
         <ul>
             <li>
                 <p class="title">Biography</p>
-                <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ea culpa ab.</p>
+                <p class="content">Web Developer and student based in Algeria,<br>Facinated by how things work,<br>Loves to learn and explore new stuff.</p>
             </li>
             <li>
                 <p class="title">contact</p>
-                <p class="content">linkedin<br>facebook</p>
+                <p class="content"><a href="https://www.linkedin.com/in/sohaib-segueni-4385291a4/">www.linkedin.com</a>
             </li>
             <li>
                 <p class="title">services</p>
@@ -64,7 +66,7 @@
     <div class="separator"></div>
     <!--skills-->
     <section class="skills">
-        <h1>My Skills</h1>
+        <h1>What I know</h1>
         <div class="container">
             <div class="skill">
                 <img src="img/skills/html5.png" alt="html5">
@@ -86,64 +88,75 @@
         </div>
     </section>
     <div class="separator"></div>
-    <section class="projects">
-        <h1>My Work</h1>
-   
-        <div class="container carousel">
-            <a href="challenges\advice-generator-app-main" class="carousel-item carousel-active">
-                <div class="project">
-                    <img src="challenges\advice-generator-app-main\screenshot.jpeg" alt="project picture">
-                    <ul class="tags">
-                        <li class="tag js">javascript</li>
-                        <li class="tag html">html 5</li>
-                        <li class="tag css">css 3</li>
-                    </ul>
-                    <p class="title">Advice generator app</p>
-                </div>
-            </a>
-            <a href="challenges\interactive-rating-component" class="carousel-item">
-                <div class="project ">
-                    <img src="challenges\interactive-rating-component\active.jpeg" alt="project picture">
-                    <ul class="tags">
-                        <li class="tag js">javascript</li>
-                        <li class="tag html">html 5</li>
-                        <li class="tag css">css 3</li>
-                    </ul>
-                    <p class="title">Interactive rating component</p>
-                </div>
-            </a>
-
-            <a href="challenges\pig-game" class="carousel-item">
-                <div class="project">
-                    <img src="challenges\pig-game\screenshot.png" alt="project picture">
-                    <ul class="tags">
-                        <li class="tag js">javascript</li>
-                        <li class="tag html">html 5</li>
-                        <li class="tag css">css 3</li>
-                    </ul>
-                    <p class="title">Pig game</p>
-                </div>
-            </a>
-            <a href="challenges\guess-my-number" class="carousel-item">
-                <div class="project">
-                    <img src="challenges\guess-my-number\screenshot.jpeg" alt="project picture">
-                    <ul class="tags">
-                        <li class="tag js">javascript</li>
-                        <li class="tag html">html 5</li>
-                        <li class="tag css">css 3</li>
-                    </ul>
-                    <p class="title">Guess my number</p>
-                </div>
-            </a>
+    <section class="projects" id="projects">
+        <h1>Stuff I made</h1>
+        <div class="carousel">
+            <div class="container">
+                <!--<a href="challenges\advice-generator-app-main" class="carousel-item carousel-active">-->
+                    <div class="project carousel-item carousel-active">
+                        <img src="challenges\advice-generator-app-main\screenshot.jpeg" alt="project picture">
+                        
+                        <p class="p-title">Advice generator app</p>
+                        <ul class="tags">
+                            <li class="tag js">javascript</li>
+                            <li class="tag html">html 5</li>
+                            <li class="tag css">css 3</li>
+                        </ul>
+                    </div>
+                <!-- </a> -->
+                <!-- <a href="challenges\interactive-rating-component" class="carousel-item"> -->
+                    <div class="project carousel-item ">
+                        <img src="challenges\interactive-rating-component\active.jpeg" alt="project picture">
+                        <p class="p-title">Interactive rating component</p>
+                        <ul class="tags">
+                            <li class="tag js">javascript</li>
+                            <li class="tag html">html 5</li>
+                            <li class="tag css">css 3</li>
+                        </ul>
+                    </div>
+                <!-- </a> -->
+    
+                <!-- <a href="challenges\pig-game" class="carousel-item"> -->
+                    <div class="project carousel-item ">
+                        <img src="challenges\pig-game\screenshot.png" alt="project picture">
+                        <p class="p-title">Pig game</p>
+                        <ul class="tags">
+                            <li class="tag js">javascript</li>
+                            <li class="tag html">html 5</li>
+                            <li class="tag css">css 3</li>
+                        </ul>
+                    </div>
+                <!-- </a> -->
+                <!-- <a href="challenges\guess-my-number" class="carousel-item"> -->
+                    <div class="project carousel-item">
+                        <img src="challenges\guess-my-number\screenshot.jpeg" alt="project picture">
+                        <p class="p-title">Guess my number</p>
+                        <ul class="tags">
+                            <li class="tag js">javascript</li>
+                            <li class="tag html">html 5</li>
+                            <li class="tag css">css 3</li>
+                        </ul>
+                    </div>
+                <!-- </a> -->
+            </div>
+            <div class="carousel-nav">
+                <button class="carousel-nav-prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="btn-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                      </svg>
+                    </button>
+                    <button class="carousel-nav-next"><svg xmlns="http://www.w3.org/2000/svg" class="btn-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                    </svg></button>
+                    
+            </div>
         </div>
-        <div class="carousel-nav">
-            <button class="carousel-nav-prev"><p><</p></button>
-            <button class="carousel-nav-next"><p>></p></button>
-        </div>
+        
     </section>
     <div class="separator"></div>
     <footer>
-       
+       <p>Made With ❤ by <a href="https://www.github.com/SohaibSEG">SohaibSEG</a></p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
