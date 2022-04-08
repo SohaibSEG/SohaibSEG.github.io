@@ -27,8 +27,8 @@
         
         <ul>
             <li>
-                    <p class="title">Biography</p>
-                    <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ea culpa ab.</p>
+                <p class="title">Biography</p>
+                <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ea culpa ab.</p>
             </li>
             <li>
                 <p class="title">contact</p>
@@ -41,6 +41,9 @@
         </ul>
         <div class="portrait">
             <img src="img/portrait.jpg" alt="portrait" class="portrait-img">
+            <button type="button" class="hire" onclick="location.href='https://www.upwork.com/freelancers/~01d0919b960e1175b6'">
+                <p style="font-size: 20pt;">Hire </p><p>Me !</p>
+            </button>
         </div>
         
         <ul>
@@ -86,8 +89,8 @@
     <section class="projects">
         <h1>My Work</h1>
    
-        <div class="container">
-            <a href="challenges\advice-generator-app-main">
+        <div class="container carousel">
+            <a href="challenges\advice-generator-app-main" class="carousel-item carousel-active">
                 <div class="project">
                     <img src="challenges\advice-generator-app-main\screenshot.jpeg" alt="project picture">
                     <ul class="tags">
@@ -98,8 +101,8 @@
                     <p class="title">Advice generator app</p>
                 </div>
             </a>
-            <a href="challenges\interactive-rating-component">
-                <div class="project">
+            <a href="challenges\interactive-rating-component" class="carousel-item">
+                <div class="project ">
                     <img src="challenges\interactive-rating-component\active.jpeg" alt="project picture">
                     <ul class="tags">
                         <li class="tag js">javascript</li>
@@ -110,7 +113,7 @@
                 </div>
             </a>
 
-            <a href="challenges\pig-game">
+            <a href="challenges\pig-game" class="carousel-item">
                 <div class="project">
                     <img src="challenges\pig-game\screenshot.png" alt="project picture">
                     <ul class="tags">
@@ -121,7 +124,7 @@
                     <p class="title">Pig game</p>
                 </div>
             </a>
-            <a href="challenges\guess-my-number">
+            <a href="challenges\guess-my-number" class="carousel-item">
                 <div class="project">
                     <img src="challenges\guess-my-number\screenshot.jpeg" alt="project picture">
                     <ul class="tags">
@@ -133,18 +136,14 @@
                 </div>
             </a>
         </div>
-        
+        <div class="carousel-nav">
+            <button class="carousel-nav-prev"><p><</p></button>
+            <button class="carousel-nav-next"><p>></p></button>
+        </div>
     </section>
     <div class="separator"></div>
     <footer>
-        <div class="contact">
-            <h3>Contact me</h3>
-            <p class="content">linkedin<br>facebook</p>
-        </div>
-        <p>-or-</p>
-        <div class="hire">
-            <p style="font-size: 20pt;">Hire </p><p>Me !</p>
-        </div>
+       
     </footer>
 </body>
 </html>
