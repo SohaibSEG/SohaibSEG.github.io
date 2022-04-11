@@ -6,14 +6,17 @@ const buPortfolio = document.querySelector(".bu-open-portfolio")
 let current = 0;
 
 const moveNext = function(){
+    console.log(current);
     pages[current].classList.remove("active");
     current++;
+    current = current < pages.length ? current : pages.length -1;
     pages[current].classList.add("active");
 }
 
 const moveBack = function(){
     pages[current].classList.remove("active");
     current--;
+    current = current > 0 ? current : 0;
     pages[current].classList.add("active");
 }
 
