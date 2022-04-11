@@ -33,6 +33,7 @@ a:link,a:visited{
     width: 100%;
     overflow: hidden;
     transition: .5s;
+    -webkit-transition: .5s;
 }
 .active{
     height: 100%;
@@ -200,6 +201,7 @@ a:link,a:visited{
     gap: 1rem;
     max-width: 16rem;
     transition: .3s;
+    -webkit-transition: .3s;
 }
 .project:hover{
     transform: scale(1.05);
