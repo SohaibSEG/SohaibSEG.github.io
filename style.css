@@ -194,6 +194,7 @@ a:link,a:visited{
 }
 
 .project{
+    cursor: pointer;
     border-radius: 8px;
     background-color: #161515;
     display: flex;
