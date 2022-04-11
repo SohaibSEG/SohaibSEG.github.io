@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+:root{
+    --primary : #0a62d0 ;
+    --accent : #f3d849;
+    --light-gray : #f3f7fa;
+    --dark : #191718;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather',serif ;
+}
+
+body{
+    height: 100vh;
+    position: relative;
+    color: var(--light-gray);
+    background-color: var(--dark);
+}
+button{
+    cursor: pointer;
+    font-weight: 600;
+}
+a:link,a:visited{
+    color: var(--light-gray);
+}
+.page{
+    height: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: .5s;
+}
+.active{
+    height: 100%;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper{
+    max-width: 90ch;
+    margin: auto;
+    padding: 1rem;
+}
+.bu-primary {
+    background-color: var(--accent);
+    color: var(--dark);
+    border: 2px solid var(--accent);
+}
+.bu-accent {
+    background-color: var(--dark);
+    color: var(--accent);
+    border: 2px solid var(--accent);
+}
+.main-container {
+    margin: 1rem 2rem;
+    max-width: 85ch;
+    display: grid;
+    column-gap: 2rem;
+    row-gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto  auto;
+    align-content: space-around;
+}
+
+.portrait{
+    align-self: center;
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+    grid-row: 1 / span 2;
+    grid-column: 3;
+    border-radius: 8px;
+}
+.main-text-container{
+    grid-row: 1 ;
+    grid-column: 1 / span 2;
+    align-self: center;
+    justify-self: start;
+}
+.main-greeting{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.main-container button{
+    border-radius: 8px;
+    align-self: top;
+    padding: 1rem;
+    width: 100%;
+}
+
+@media screen and (max-width : 786px) {
+    body{
+        height: 100%;
+    }
+    .main-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto auto;
+    }
+    .portrait{
+        grid-row: 1 ;
+        grid-column: 1;
+        border-radius: 8px;
+    }
+    .main-text-container{
+        grid-row: 2;
+        grid-column: 1;
+        align-self: center;
+        justify-self: start;
+    }
+}
+
+/* about */
+
+
+.go-back{
+    cursor: pointer;
+    padding: 0 1rem;
+    height: 4rem;
+    width: 4rem;
+}
+
+.go-back path{
+    color: #fff;
+}
+
+.go-back:hover > path{
+    color: #f3d849;
+}
+
+.about-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding:0 1.5rem;
+
+}
+.about-container h1{
+    margin-bottom: .5rem;
+}
+
+.skills{
+    max-width: 35ch;
+    padding: 1rem;
+    border-radius: 12pt;
+    color: #191718;
+    background-color: #f3f7fa;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: .5rem;
+}
+.skills progress{
+    width: 100%;
+}
+.interests {
+    font-size: .8rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.interest{
+    border-radius: 4px;
+    background-color: #0f0f0f;
+    padding: 1rem;
+    text-align: center;
+    min-width: 5rem;
+}
+
+.about .bu-accent{
+    border-radius: 4px;
+    padding: 1rem;
+    align-self: end;
+}
+
+.portfolio-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding:0 1.5rem;
+}
+
+.project{
+    border-radius: 8px;
+    background-color: #161515;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 16rem;
+    transition: .3s;
+}
+.project:hover{
+    transform: scale(1.05);
+}
+.project img{
+    width: 100%;
+    max-width: 100%;
+
+}
+.project h4{
+    margin:0 .5rem;
+}
+.project p{
+    color: #eee;
+    margin: 0 .5rem;
+    font-size: 12px;
+}
+
+.project ul{
+    font-size: .7rem;
+    margin: 0 .5rem;
+    margin-bottom: 1rem;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    
+}
+.project ul li{
+    background-color: #0f0f0f;
+    padding: .5rem;
+    border-radius: 2px;
+}
