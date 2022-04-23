@@ -1,23 +1,40 @@
 'use-strict';
 const buCart = document.querySelector(".bu-cart");
 const buMenu = document.querySelectorAll(".bu-menu")
+//navigation events
+
 const toggleCart = function(){
     const cartView = document.querySelector(".cart");
-    if(cartView.style.display === "none" | cartView.style.display === ""){
-        cartView.style.display = "flex";
-    }else{
-        cartView.style.display = "none";
-    }
+    cartView.classList.toggle("cart-visible");
 }
 
 const toggleMenu = function() {
     const linksWrapper = document.querySelector(".links-wrapper");
     const navBar = document.querySelector(".navbar")
-    if(linksWrapper.style.display === "none" | linksWrapper.style.display == ""){
-        navBar.style.position = "static";
-        linksWrapper.style.display = "inline-block";
+    if(linksWrapper.classList.contains("links-visible")){
+        linksWrapper.classList.remove("links-visible");
+        setTimeout(()=>{navBar.style.position = "relative";},100);
     }else{
-        navBar.style.position = "relative";
-        linksWrapper.style.display = "none";
+        linksWrapper.classList.add("links-visible");
+        navBar.style.position = "static"; 
     }
 }
+
+const toggleLightBox = function (){
+    const lightBox = document.querySelector(".lightbox");
+    lightBox.classList.toggle("lightbox-visible");
+}
+//TODO: carousel
+
+// cart events 
+
+let cartState =  [
+        {
+            Tite : "Fall Limited Edition Sneakers",
+            UnitePrice : 250.00,
+            Discount : 0.5,
+            Quantity : 3
+        }
+    ]
+
+const buAddToCart = document.querySelector(".add-to-cart");
