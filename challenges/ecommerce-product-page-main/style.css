@@ -446,12 +446,11 @@ body{
 .bu-cart{
     position: relative;
 }
-.bu-cart::after{
+.bu-cart .alert{
     font-weight: 600;
     padding: .05rem .3rem;
     font-size: .6rem;
     border-radius: .6rem;
-    content: "3";
     color: #fff;
     background-color: var(--orange);
     position: absolute;

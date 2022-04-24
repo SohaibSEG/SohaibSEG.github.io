@@ -33,51 +33,30 @@
         </div>
       </div>
       <div class="right">
-        <button class="bu-cart" onclick="toggleCart()"><img src="images/icon-cart.svg" alt="" ></button>
+        <button class="bu-cart" onclick="toggleCart()"><img src="images/icon-cart.svg" alt="" ><span class="alert">3</span></button>
         <img src="images/image-avatar.png" alt="" class="profile-pic">
         
       </div>
       <div class="cart">
+        <template class="cart-item-template">
+          <div class="cart-item">
+            <img src="images/image-product-1-thumbnail.jpg" alt="" class="ci-thumbnail thumbnail">
+            <div class="ci-data">
+              <p class="ci-title">Fall Limited Edition Sneakers</p>
+              <p class="ci-price"><span>$125.00 x 3</span> <strong> $375.00</strong></p>
+            </div>
+            <button class="delete"><img src="images/icon-delete.svg" alt="" class="icon"></button>
+          </div>
+        </template>
         <strong class="cart-header">Cart</strong>
         <div class="cart-content">
 
-          <div class="cart-item">
-            <img src="images/image-product-1-thumbnail.jpg" alt="" class="thumbnail">
-            <div class="ci-data">
-              <p class="ci-title">Fall Limited Edition Sneakers</p>
-              <p>$125.00 x 3 <strong>$375.00</strong></p>
-            </div>
-            <button class="delete"><img src="images/icon-delete.svg" alt="" class="icon"></button>
-          </div>
-          <div class="cart-item">
-            <img src="images/image-product-1-thumbnail.jpg" alt="" class="thumbnail">
-            <div class="ci-data">
-              <p class="ci-title">Fall Limited Edition Sneakers</p>
-              <p>$125.00 x 3 <strong>$375.00</strong></p>
-            </div>
-            <button class="delete"><img src="images/icon-delete.svg" alt="" class="icon"></button>
-          </div>
-          <div class="cart-item">
-            <img src="images/image-product-1-thumbnail.jpg" alt="" class="thumbnail">
-            <div class="ci-data">
-              <p class="ci-title">Fall Limited Edition Sneakers</p>
-              <p>$125.00 x 3 <strong>$375.00</strong></p>
-            </div>
-            <button class="delete"><img src="images/icon-delete.svg" alt="" class="icon"></button>
-          </div>
-          <div class="cart-item">
-            <img src="images/image-product-1-thumbnail.jpg" alt="" class="thumbnail">
-            <div class="ci-data">
-              <p class="ci-title">Fall Limited Edition Sneakers</p>
-              <p>$125.00 x 3 <strong>$375.00</strong></p>
-            </div>
-            <button class="delete"><img src="images/icon-delete.svg" alt="" class="icon"></button>
-          </div>
         </div>
-        <button class="checkout bu-primary">Checkout</button>
-        <div class="c-empty" style="display:none;">
+        
+        <div class="c-empty" style="display: none;">
           <strong class="empty-msg">Your cart is empty.</strong>
         </div>
+        <button class="checkout bu-primary">Checkout</button>
       </div>
     </div>
 
@@ -120,8 +99,8 @@
           <div class="p-controls">
             <div class="p-counter">
               <button class="bu-minus primary"><img src="images/icon-minus.svg" alt="" ></button>
-              <p class="count">0</p>
-              <button class="bu-add primary"><img src="images/icon-plus.svg" alt=""></button>
+              <p class="count">1</p>
+              <button class="bu-plus primary"><img src="images/icon-plus.svg" alt=""></button>
             </div>
             <button class="add-to-cart bu-primary">
               <img src="images/icon-cart.svg" alt="cart" class="icon">
