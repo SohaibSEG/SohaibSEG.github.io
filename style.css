@@ -206,9 +206,10 @@ a:link,a:visited{
 .portfolio-container {
     margin-top: 1rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: start;
+
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .project{
