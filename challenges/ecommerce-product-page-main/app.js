@@ -21,12 +21,68 @@ const toggleMenu = function() {
         navBar.style.position = "static"; 
     }
 }
-
+//lightbox
+const lightBox = document.querySelector(".lightbox");
+const toggle = document.querySelectorAll(".toggle-lightbox");
 const toggleLightBox = function (){
-    const lightBox = document.querySelector(".lightbox");
     lightBox.classList.toggle("lightbox-visible");
 }
-//TODO: carousel
+if(document.documentElement.clientWidth > 786){
+    toggle.forEach((element)=>{element.addEventListener('click',toggleLightBox)});
+}
+//carousel
+const imgList = [
+    "images/image-product-1.jpg",
+    "images/image-product-2.jpg",
+    "images/image-product-3.jpg",
+    "images/image-product-4.jpg",
+]
+let lbMainImage = document.querySelector(".lightbox .img-active");
+let buNext = document.querySelector(".lightbox .next");
+let buPrev = document.querySelector(".lightbox .previous");
+if(document.documentElement.clientWidth < 786){
+    lbMainImage = document.querySelector(".product-main .img-active");
+    buNext = document.querySelector(".product-main .next");
+    buPrev = document.querySelector(".product-main .previous");
+}
+let index = 0;
+
+
+const moveNext = function (){
+    index++;
+    if(index>=imgList.length){
+        index = 0;
+    }
+    lbMainImage.src = imgList[index];
+}
+
+const movePrev = function (){
+    index--;
+    if(index<0){
+        index = imgList.length - 1;
+    }
+    lbMainImage.src = imgList[index];
+}
+buNext.addEventListener('click',moveNext);
+buPrev.addEventListener('click',movePrev);
+//thumbnail
+
+const thumbnails = document.querySelectorAll(".thumbnails");
+
+thumbnails.forEach((thumbnails_)=>{
+    const tmbList = thumbnails_.querySelectorAll('.thumbnail');
+    let currentActive = thumbnails_.querySelector(".t-active");
+    tmbList.forEach((thumbnail)=>{
+        thumbnail.addEventListener('click',()=>{
+            currentActive.classList.toggle("t-active");
+            thumbnail.classList.toggle("t-active");
+            currentActive = thumbnail;
+            let index = Array.prototype.indexOf.call(tmbList,thumbnail);
+            thumbnail.parentNode.parentNode.querySelector(".img-active").src = imgList[index];
+        });
+    });
+    
+})
 
 // cart events 
 
@@ -49,6 +105,7 @@ const removeElement = function(index){
     cartState.splice(index,1);
     updateCartElements();
 }
+
 function updateCartElements(){
     const cartContent = document.querySelector(".cart-content");
     document.querySelector(".bu-cart .alert").innerText = cartState.length;
