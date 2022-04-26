@@ -5,29 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="burger.css">
     <title>Modern & Elegant Interior Design</title>
 </head>
 <body>
 
     <main>
-        <div class="logo"><p>Design</p></div>
+        
         <div class="navigation">
-            <ul class="links">
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Store</a></li>
-                <li><a href="#">Inspiration</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
+            <div class="logo"><p>Design</p></div>
+            <div class="links-wrapper">
+                <ul class="links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Store</a></li>
+                    <li><a href="#">Inspiration</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
             <div class="icons">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd" />
                 </svg>
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
-                  </svg>
+                </svg>
+                <input type="checkbox" id="menu_checkbox">
+                <label for="menu_checkbox" class="burger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </label>
             </div>
-            
-            
         </div>
         <div class="social">
             <ul>
@@ -59,18 +67,14 @@
                 <img src="img/item3.jpg" alt="">
                 <p class="item-name">Bed</p>
             </div>
-            <div class="c-item">
-                <img src="img/item1.jpg" alt="">
-                <p class="item-name">Chair</p>
-            </div>
         </div>
         <ul class="c-controls">
-            <li><button>
+            <li><button class="next">
                 <svg xmlns="http://www.w3.org/2000/svg" class="bu-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
                   </svg>
             </button></li>
-            <li><button>
+            <li><button class="prev">
                 <svg xmlns="http://www.w3.org/2000/svg" class="bu-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
                   </svg>
@@ -78,5 +82,6 @@
         </ul>
     </div>
     </main>
+    <script src="app.js"></script>
 </body>
 </html>
