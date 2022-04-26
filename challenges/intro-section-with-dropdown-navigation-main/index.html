@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,25 +15,68 @@
   </style>
 </head>
 <body>
+  <nav>
+    <div class="logo"><img src="images/logo.svg" alt="snap"></div>
+    <div class="nav-wrapper nav-wrapper-hidden">
+      <ul class="links">
+        <button class="toggle-nav bu-secondary-borderless"><img src="images/icon-close-menu.svg" alt="close-menu"></button>
+        <!-- Features
+        Company
+        Careers
+        About -->
+        <li>
+          <div class="dropdown link">
+            <span>Features  <img src="images/icon-arrow-down.svg" alt="" class="arrow"></span>
+            <ul class="dropdown-content d-1 dropdown-content-hidden">
+              <li><img src="images/icon-todo.svg" alt="todo"><a href="#">Todo List</a></li>
+              <li><img src="images/icon-calendar.svg" alt="todo"><a href="#">Calendar</a></li>
+              <li><img src="images/icon-reminders.svg" alt="todo"><a href="#">Reminders</a></li>
+              <li><img src="images/icon-planning.svg" alt="todo"><a href="#">Planning</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown link">
+            <span>Company  <img src="images/icon-arrow-down.svg" alt="" class="arrow"></span>
+            <ul class="dropdown-content d-2 dropdown-content-hidden">
+              <li><a href="#">History</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#" class="link">Careers</a></li>
+        <li><a href="#" class="link">About</a></li>
+      </ul>
+      <div class="actions">
+        <button class="bu-secondary-borderless">Login</button>
+        <button class="bu-secondary">Register</button>
+      </div>
+    </div>
+    <button class="toggle-nav bu-secondary-borderless"><img src="images/icon-menu.svg" alt="close-menu"></button>
+  </nav>
 
-  Features
-  Company
-  Careers
-  About
 
-  Login
-  Register
+  <main>
+    <img src="images/image-hero-desktop.png" alt="" class="img-hero img-hero-desktop">
+    <img src="images/image-hero-mobile.png" alt="" class="img-hero img-hero-mobile">
+    <div class="hero-main">
+      <h1>Make<br id="line-br"> remote work</h1>
+      <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+      <button class="bu-primary">Learn more</button>
+    </div>
+    <div class="hero-clients">
+      <img src="images/client-databiz.svg" alt="databiz">
+      <img src="images/client-audiophile.svg" alt="databiz">
+      <img src="images/client-meet.svg" alt="databiz">
+      <img src="images/client-maker.svg" alt="databiz">
 
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
-  
+    </div>
+  </main>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://sohaibseg.github.io">SohaibSEG</a>.
   </div>
+  <script src="app.js"></script>
 </body>
 </html>
