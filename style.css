@@ -131,6 +131,9 @@ a:link,a:visited{
         align-self: center;
         justify-self: start;
     }
+    .portfolio-container{
+        justify-content: space-around;
+    }
 }
 
 /* about */
