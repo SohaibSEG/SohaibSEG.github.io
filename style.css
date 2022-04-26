@@ -132,7 +132,7 @@ a:link,a:visited{
         justify-self: start;
     }
     .portfolio-container{
-        justify-content: space-around;
+        justify-content: center;
     }
 }
 
@@ -209,8 +209,6 @@ a:link,a:visited{
 .portfolio-container {
     margin-top: 1rem;
     display: flex;
-    justify-content: start;
-
     flex-wrap: wrap;
     gap: 2rem;
 }
