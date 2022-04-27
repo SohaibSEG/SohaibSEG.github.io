@@ -16,73 +16,8 @@
 </head>
 <body>
 
-  <div class="comment-section">
-    <div class="comments-wrp">
-      <div class="comment container">
-        <div class="c-score">
-          <img src="images/icon-plus.svg" alt="plus" class="score-control score-plus">
-          <p class="score-number">12</p>
-          <img src="images/icon-minus.svg" alt="minus" class="score-control score-minus">
-        </div>
-        <div class="c-controls">
-          <a href="" class="delete"><img src="images/icon-delete.svg" alt="" class="control-icon">Delete</a>
-          <a href="" class="edit"><img src="images/icon-edit.svg" alt="" class="control-icon">Edit</a>
-          <a href="" class="reply"><img src="images/icon-reply.svg" alt="" class="control-icon">Reply</a></div>
-        <div class="c-user">
-          <img src="images/avatars/image-amyrobson.webp" alt="" class="usr-img">
-          <p class="usr-name">amyrobson</p>
-          <p class="cmnt-at">1 month ago</p>    
-        </div>
-        <p class="c-text">
-          Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.
-        </p>
-      </div>
-      <div class="comment container">
-        <div class="c-score">
-          <img src="images/icon-plus.svg" alt="plus" class="score-control score-plus">
-          <p class="score-number">5</p>
-          <img src="images/icon-minus.svg" alt="minus" class="score-control score-minus">
-        </div>
-        <div class="c-controls">
-          <a href="" class="delete"><img src="images/icon-delete.svg" alt="" class="control-icon">Delete</a>
-          <a href="" class="edit"><img src="images/icon-edit.svg" alt="" class="control-icon">Edit</a>
-          <a href="" class="reply"><img src="images/icon-reply.svg" alt="" class="control-icon">Reply</a>
-        </div>
-        <div class="c-user">
-          <img src="images/avatars/image-maxblagun.webp" alt="" class="usr-img">
-          <p class="usr-name">maxblagun</p>
-          <p class="cmnt-at">2 weeks ago</p>    
-        </div>
-        <p class="c-text">
-          Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to dive into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!
-        </p>
-      </div>
-
-
-      <div class="replies comments-wrp">
-        <div class="comment container">
-          <div class="c-score">
-            <img src="images/icon-plus.svg" alt="plus" class="score-control score-plus">
-            <p class="score-number">4</p>
-            <img src="images/icon-minus.svg" alt="minus" class="score-control score-minus">
-          </div>
-          <div class="c-controls">
-            <a href="" class="delete"><img src="images/icon-delete.svg" alt="" class="control-icon">Delete</a>
-            <a href="" class="edit"><img src="images/icon-edit.svg" alt="" class="control-icon">Edit</a>
-            <a href="" class="reply"><img src="images/icon-reply.svg" alt="" class="control-icon">Reply</a>
-          </div>
-          <div class="c-user">
-            <img src="images/avatars/image-maxblagun.webp" alt="" class="usr-img">
-            <p class="usr-name">ramsesmiron</p>
-            <p class="cmnt-at">1 week ago</p>    
-          </div>
-          <p class="c-text">
-            <span class="reply-to">@maxblagun</span>
-            <span class="c-body">
-              If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first.
-            </span>
-          </p>
-        </div>
+  <!--
+    <div class="comment-wrp">
 
         <div class="comment container this-user">
           <div class="c-score">
@@ -91,36 +26,89 @@
             <img src="images/icon-minus.svg" alt="minus" class="score-control score-minus">
           </div>
           <div class="c-controls">
-            <a href="" class="delete"><img src="images/icon-delete.svg" alt="" class="control-icon">Delete</a>
-            <a href="" class="edit"><img src="images/icon-edit.svg" alt="" class="control-icon">Edit</a>
-            <a href="" class="reply"><img src="images/icon-reply.svg" alt="" class="control-icon">Reply</a>
+            <a  class="delete"><img src="images/icon-delete.svg" alt="" class="control-icon">Delete</a>
+            <a  class="edit"><img src="images/icon-edit.svg" alt="" class="control-icon">Edit</a>
+            <a  class="reply"><img src="images/icon-reply.svg" alt="" class="control-icon">Reply</a>
           </div>
           <div class="c-user">
-            <img src="images/avatars/image-juliusomo.webp" alt="" class="usr-img">
-            <p class="usr-name">juliusomo</p>
-            </p>
-            <p class="cmnt-at">2 days ago</p>    
+            <img src="images/avatars/image-maxblagun.webp" alt="" class="usr-img">
+            <p class="usr-name">maxblagun</p>
+            <p class="cmnt-at">2 weeks ago</p>    
           </div>
           <p class="c-text">
-            <span class="reply-to">@ramsesmiron</span>
-            <span class="c-body">
-            I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant.
-            </span>
+            Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to dive into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!
           </p>
-        </div>
+        </div><!--comment
+
+        <div class="replies comments-wrp">
+          <div class="reply-input container">
+            <img src="images/avatars/image-juliusomo.webp" alt="" class="usr-img">
+            <textarea type="text" name="" id="cmnt-input" placeholder="Add a comment..."></textarea>
+            <button class="bu-primary">SEND</button>
+          </div><!--reply input
+        </div><!--replies
+
       </div>
-    </div>
-    
+
+  -->
+  <template class="reply-input-template">
     <div class="reply-input container">
       <img src="images/avatars/image-juliusomo.webp" alt="" class="usr-img">
       <textarea type="text" name="" id="cmnt-input" placeholder="Add a comment..."></textarea>
       <button class="bu-primary">SEND</button>
-    </div> 
-  </div>
+    </div>
+  </template>
+  <template class="comment-template">
+    <div class="comment-wrp">
+
+      <div class="comment container">
+        <div class="c-score">
+          <img src="images/icon-plus.svg" alt="plus" class="score-control score-plus">
+          <p class="score-number">5</p>
+          <img src="images/icon-minus.svg" alt="minus" class="score-control score-minus">
+        </div>
+        <div class="c-controls">
+          <a  class="delete"><img src="images/icon-delete.svg" alt="" class="control-icon">Delete</a>
+          <a  class="edit"><img src="images/icon-edit.svg" alt="" class="control-icon">Edit</a>
+          <a  class="reply"><img src="images/icon-reply.svg" alt="" class="control-icon">Reply</a>
+        </div>
+        <div class="c-user">
+          <img src="images/avatars/image-maxblagun.webp" alt="" class="usr-img">
+          <p class="usr-name">maxblagun</p>
+          <p class="cmnt-at">2 weeks ago</p>    
+        </div>
+        <p class="c-text">
+          <span class="reply-to"></span>
+          <span class="c-body"></span>
+        </p>
+      </div><!--comment-->
+
+      <div class="replies comments-wrp">
+
+      </div><!--replies-->
+
+    </div>
+  </template>
+  <div class="comment-section">
+
+    <div class="comments-wrp">
+
+       <!--comment wrapper-->
+
+    </div> <!--commentS wrapper-->
+    <div class="reply-input container">
+      <img src="images/avatars/image-juliusomo.webp" alt="" class="usr-img">
+      <textarea type="text" name="" id="cmnt-input" placeholder="Add a comment..."></textarea>
+      <button class="bu-primary">SEND</button>
+    </div>    
+
+<!--reply input-->
+  </div> <!--comment sectio-->
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="app.js"></script>
 </body>
 </html>
