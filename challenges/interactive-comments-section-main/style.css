@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+:root{
+    --Dark-blue: hsl(212, 24%, 26%);
+    --Grayish-Blue: hsl(211, 10%, 45%);
+    --Light-gray: hsl(223, 19%, 93%);
+    --Very-light-gray: hsl(228, 33%, 97%);
+    --White: hsl(0, 0%, 100%);
+    /*primary*/
+    --Moderate-blue: hsl(238, 40%, 52%);
+    --Soft-Red: hsl(358, 79%, 66%);
+    --Light-grayish-blue: hsl(239, 57%, 85%);
+    --Pale-red: hsl(357, 100%, 86%);
+}
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik';
+}
+p{
+    line-height: 1.5;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-color: var(--Very-light-gray);
+}
+a{
+    text-decoration: none;
+    font-weight: 500;
+}
+.bu-primary{
+    background-color: var(--Moderate-blue);
+    color: var(--White);
+    border: none;
+    padding: .75rem 1.5rem;
+    border-radius: 4px;
+}
+.container{
+    border-radius: 8px;
+    padding: 1.5rem;
+    background-color: var(--White);
+}
+.comments-wrp{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: .5rem;
+}
+.comment-section{
+    max-width: 72ch;
+    margin: auto;
+    margin-top: 1rem;
+}
+.comment{
+    display: grid;
+    grid-template-areas: 
+        "score user controls"
+        "score comment comment"
+        "score comment comment"
+    ;
+    gap: 1.5rem;
+    row-gap: 1rem;
+    color: var(--Grayish-Blue);
+}
+
+.c-score{
+    color: var(--Moderate-blue);
+    font-weight: 500;
+    grid-area: score;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: .75rem;
+    padding-top: .5rem;
+    width: 1rem;
+    box-sizing: content-box;
+    background-color: var(--Very-light-gray);
+    border-radius: 8px;
+    align-self: flex-start;
+}
+
+.c-text{
+    grid-area: comment;
+}
+.c-user{
+    grid-area: user;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.usr-name{
+    color: var(--Dark-blue);
+    font-weight: 700;
+}
+.usr-img{
+    height: 2rem;
+    width: 2rem;
+}
+
+.c-controls{
+    display: flex;
+    gap: 1rem;
+    color: var(--Moderate-blue);
+    grid-area: controls;
+    align-self: center;
+    justify-self: flex-end;
+}
+.c-controls a{
+    align-items: center;
+}
+.edit , .reply{
+    color: var(--Moderate-blue);
+}
+.edit{
+    display: none;
+}
+.delete{
+    color: var(--Soft-Red);
+    display: none;
+}
+.control-icon{
+    margin-right: .5rem;
+}
+
+
+.replies{
+    margin-left: 2.5rem;
+    padding-left: 2.4rem;
+    border-left: 1px solid var(--Light-grayish-blue);
+}
+
+.reply-to{
+    color: var(--Moderate-blue);
+    font-weight: 500;
+}
+
+.reply-input{
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    justify-content: space-between;
+    min-height: 9rem;
+}
+.reply-input img{
+    height: 2.5rem;
+    width: 2.5rem;
+}
+.reply-input button{
+    align-self: flex-start;
+}
+.reply-input textarea{
+    padding: 1rem;
+    width: 100%;
+    border: 1px solid var(--Light-gray);
+    border-radius: 4px;
+    resize: none;
+}
+
+.this-user .usr-name::after{
+    font-weight: 400;
+    content: "you";
+    color: var(--White);
+    background-color: var(--Moderate-blue);
+    padding: 0 .4rem;
+    padding-bottom: .2rem;
+    font-size: .8rem;
+    margin-left: .5rem;
+    border-radius: 2px;
+}
+
+.this-user .reply{
+    display: none;
+}
+.this-user .edit , .this-user .delete{
+    display: flex;
+}
