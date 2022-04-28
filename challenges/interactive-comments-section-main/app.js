@@ -122,7 +122,7 @@ const data = {
     const inputNode = inputTemplate.content.cloneNode(true);
     const addedInput = appendFrag(inputNode,parent);
     addedInput.querySelector(".bu-primary").addEventListener("click",()=>{
-      let commentBody = addedInput.querySelector("#cmnt-input").value;
+      let commentBody = addedInput.querySelector(".cmnt-input").value;
       if( commentBody.length == 0) return;
       addComment(commentBody,parentId,replyTo);
     })
@@ -191,10 +191,10 @@ const data = {
   initComments();
   const cmntInput = document.querySelector(".reply-input");
   cmntInput.querySelector(".bu-primary").addEventListener("click",()=>{
-      let commentBody = cmntInput.querySelector("#cmnt-input").value;
+      let commentBody = cmntInput.querySelector(".cmnt-input").value;
       if( commentBody.length == 0) return;
       addComment(commentBody,0);
-      cmntInput.querySelector("#cmnt-input").value = "";
+      cmntInput.querySelector(".cmnt-input").value = "";
     })
 
   // addComment("Hello ! It works !!",0);
