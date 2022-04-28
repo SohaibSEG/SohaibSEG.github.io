@@ -30,6 +30,12 @@ a{
     text-decoration: none;
     font-weight: 500;
 }
+button{
+    cursor: pointer;
+}
+button:hover{
+    filter: saturate(80%);
+}
 .bu-primary{
     background-color: var(--Moderate-blue);
     color: var(--White);
@@ -46,7 +52,6 @@ a{
     background-color: var(--White);
 }
 .comments-wrp {
-    margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
 }
@@ -63,6 +68,7 @@ a{
         "score comment comment"
         "score comment comment"
     ;
+    grid-template-columns: auto 1fr auto;
     gap: 1.5rem;
     row-gap: 1rem;
     color: var(--Grayish-Blue);
@@ -84,11 +90,17 @@ a{
     border-radius: 8px;
     align-self: flex-start;
 }
-
+.score-control{
+    width: 100%;
+    cursor: pointer;
+    object-fit: scale-down;
+}
 .c-text{
     grid-area: comment;
+    width: 100%;
 }
 .c-user{
+    width: 100%;
     grid-area: user;
     display: flex;
     gap: 1rem;
@@ -129,10 +141,8 @@ a{
     margin-right: .5rem;
 }
 
-
 .replies{
-    margin: 0;
-    display: none;
+    display: flex;
     margin-left: 2.5rem;
     padding-left: 2.4rem;
     border-left: 1px solid var(--Light-grayish-blue);
@@ -145,6 +155,7 @@ a{
 
 .reply-input{
     display: grid;
+    margin-bottom: 1rem;
     grid-template-areas: "avatar input button";
     grid-template-columns: min-content auto min-content;
     justify-items: center;
@@ -227,4 +238,57 @@ a{
         padding: .5rem;
         align-self: stretch;
     }
+}
+
+
+.modal-wrp{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,.3);
+}
+
+.modal{
+    padding: 1.5rem;
+    max-width: 32ch;
+    display: grid;
+    gap: 1rem;
+    grid-template-areas: 
+    "heading heading"
+    "body body"
+    "no yes";
+}
+
+.invisible{
+    display: none;
+}
+
+.modal h3{
+    grid-area: heading;
+    color: var(--Dark-blue);
+}
+.modal button{
+    color: var(--White);
+    padding: .75rem;
+    border-radius: 8px;
+    border: none;
+    font-weight: 500;
+}
+.modal p{
+    grid-area: body;
+    color: var(--Grayish-Blue);
+    line-height: 1.5;
+}
+.modal .yes{
+    grid-area: yes;
+    background-color: var(--Soft-Red);
+}
+.modal .no{
+    background-color: var(--Grayish-Blue);
+    grid-area: no;
 }
