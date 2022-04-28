@@ -131,9 +131,6 @@ a:link,a:visited{
         align-self: center;
         justify-self: start;
     }
-    .portfolio-container{
-        justify-content: center;
-    }
 }
 
 /* about */
@@ -210,6 +207,8 @@ a:link,a:visited{
     margin-top: 1rem;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
     gap: 2rem;
 }
 
