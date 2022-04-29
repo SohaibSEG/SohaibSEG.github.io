@@ -23,6 +23,7 @@ p{
 body{
     height: 100%;
     width: 100%;
+    padding-top: 3rem;
     background-color: var(--Very-light-gray);
 }
 a{
