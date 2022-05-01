@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign up to awesome website</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            
+                <div class="form-wrapper">
+                    <form action="" class="signup">
+                        <h1>Sign up</h1>
+                        <p>create your free account</p>
+        
+                        <label for="username">Name*</label>
+                        <input type="text" name="username" id="su-username" placeholder="Enter your name">
+                        
+                        <label for="username">Email*</label>
+                        <input type="email" name="email" id="su-email" placeholder="Enter your email">
+                        
+                        <label for="username">Password*</label>
+                        <input type="password" name="password" id="su-password" placeholder="Pick a strong password">
+                        
+                        <button type="submit">SIGN UP NOW</button>
+                    </form>
+                    <form action="" class="signin hidden">
+                        <h1>Sign in</h1>
+                        <p>login to your account</p>
+                        <label for="username">Email*</label>
+                        <input type="email" name="email" id="si-email" placeholder="Enter your email">
+                        
+                        <label for="username">Password*</label>
+                        <input type="password" name="password" id="si-password" placeholder="Enter your password">
+                        <a href="#">forgot password?</a>
+                        <button type="submit">SIGN IN</button>
+                    </form>
+                </div>
+            
+            <div class="banner">
+                <p>Already have an account?</p>
+                <button type="button" class="switch"><span class="text">Sign in</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="arrow" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                      </svg>
+                </button>
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

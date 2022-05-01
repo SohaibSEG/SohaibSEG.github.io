@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+:root{
+    --clr-accent : #171717;
+    --clr-light-grey : #a0a0aa;
+    --very-light-grey : #dedede;
+}
+
+*{
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik',sans-serif;
+}
+html{
+    height: 100%;
+}
+button{
+    cursor: pointer;
+    border: none;
+    padding: .75rem;
+    border-radius: 8px;
+}
+body{
+    background-color: var(--very-light-grey);
+    height: 100%;
+    width: 100%;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.container{
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: auto;
+    display: flex;
+    width: 100%;
+    max-width: 80ch;
+}
+form{
+    transition: opacity .5s ease-in-out;
+}
+label,input{
+    display: block;
+    font-weight: 500;
+}
+a{
+    color: var(--clr-accent);
+}
+input{
+    border: 1px solid var(--very-light-grey);
+    border-radius: 8px;
+    width: 100%;
+    margin-top: .25rem;
+    padding: .5rem;
+    margin-bottom: 1rem;
+}
+.hidden{
+    opacity: 0;
+    transform: scaleY(0);
+    position: absolute;
+}
+.form-wrapper button{
+    background-color: var(--clr-accent);
+    width: 100%;
+    color: white;
+    padding: .75rem;
+    margin-top: 1.25rem;
+}
+
+.form-wrapper p {
+    color: var(--clr-light-grey);
+    margin-bottom: 2rem;
+}
+.form-wrapper{
+    position: relative;
+    padding: 3rem;
+    width: 50%;
+}
+
+.form-wrapper h1{
+    font-size: 2.75rem;
+}
+.banner{
+
+    gap: 2rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+    background-color: var(--clr-accent);
+    width: 50%;
+}
+.banner button{
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    padding: .75rem 1rem;
+    background-color: white;
+    font-weight: 600;
+    color: var(--clr-accent);
+}
+.banner p{
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+.arrow{
+    width: 2rem;
+}
+
+
+@media screen and (max-width:768px) {
+    .container{
+        flex-direction: column;
+        justify-content: start;
+        height: 100%;
+        border-radius: 0;
+    }
+    .form-wrapper,.banner{
+        width: 100%;
+        padding: 2rem;
+        gap: 1rem;
+    }
+    .banner{
+        height: 100%;
+    }
+    .form-wrapper p{
+        margin-bottom: 1.5rem;
+    }
+    .banner p{
+        font-size: 1.5rem;
+    }
+    .banner button{
+        font-size: 1.5rem;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+    }
+}
