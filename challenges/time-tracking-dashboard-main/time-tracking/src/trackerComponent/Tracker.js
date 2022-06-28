@@ -3,7 +3,7 @@ function Tracker(props){
     return (
         <div className= {"tracker " + props.className}>
             <header className="tracker-header">
-                <img src={props.icon_src}></img>
+                <img src={props.icon_src} alt={props.className}></img>
             </header>
             <main className="tracker-body">
                 <div className="tracker-title">

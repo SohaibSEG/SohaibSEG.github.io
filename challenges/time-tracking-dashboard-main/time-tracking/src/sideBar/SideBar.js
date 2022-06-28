@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./SideBar.css";
 
 function SideBar(props) {
@@ -6,7 +5,7 @@ function SideBar(props) {
   return (
     <div className="sidebar">
       <div className="profile">
-        <img src={props.profile_img} />
+        <img src={props.profile_img} alt="avatar"/>
         <p className="text p-pale">Report for</p>
         <p className="username f-name">{props.first_name}</p>
         <p className="username l-name">{props.last_name}</p>
