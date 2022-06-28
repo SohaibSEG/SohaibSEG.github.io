@@ -1,13 +1,33 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+:root{
+  --Light-red : hsl(15, 100%, 70%);
+  --Soft-blue : hsl(195, 74%, 62%);
+  --Light-pink : hsl(348, 100%, 68%);
+  --Lime-green : hsl(145, 58%, 55%);
+  --Violet: hsl(264, 64%, 52%);
+  --Soft-orange : hsl(43, 84%, 65%);
+  --Blue: hsl(246, 80%, 60%);
+  /* Neutral */
+  --Dark-blue: hsl(235, 46%, 20%);
+  --Desaturated-blue: hsl(235, 45%, 61%);
+  --Pale-Blue: hsl(236, 100%, 87%);
+  --Very-dark-blue: hsl(226, 43%, 10%);
+}
+*{
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+}
+.p-pale{
+  color: var(--Pale-Blue);
+}
+
+body {
+  background-color: var(--Very-dark-blue);
+  margin: 0;
+  font-family: "Rubik",sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}

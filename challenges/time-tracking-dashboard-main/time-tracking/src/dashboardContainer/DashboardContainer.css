@@ -1,0 +1,17 @@
+.dashboard{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    gap: 1rem;
+    row-gap: 2rem;
+    width: 100%;
+}
+.sidebar{
+    grid-row: 1 / span 2;
+}
+
+.track{
+    grid-column: 2;
+}

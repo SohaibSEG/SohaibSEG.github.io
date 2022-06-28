@@ -1,0 +1,110 @@
+.tracker{
+    width: min(100% - 1rem ,20rem);
+    margin: auto;
+    color: white;
+    border-radius: 16px;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: min-content;
+    grid-template-columns: 1fr;
+}
+
+.tracker-header,.tracker-body{
+    width: 100%;
+}
+
+.tracker-header {
+    height: 5rem;
+    z-index: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding-right:1.5rem;
+    grid-row: 1;
+    grid-column: 1;
+}
+.tracker-header img{
+    transform: translateY(-.5rem);
+}
+.work .tracker-header{
+    background-color: var(--Light-red);
+}
+.play .tracker-header{
+    background-color: var(--Soft-blue);
+}
+/*
+Work
+Play
+Study
+Self-Care
+Exercise
+Social
+
+- Light red (work): hsl(15, 100%, 70%)
+- Soft blue (play): hsl(195, 74%, 62%)
+- Light red (study): hsl(348, 100%, 68%)
+- Lime green (exercise): hsl(145, 58%, 55%)
+- Violet (social): hsl(264, 64%, 52%)
+- Soft orange (self care): hsl(43, 84%, 65%)
+*/
+.study .tracker-header{
+    background-color: var(--Light-pink);
+}
+.self-care .tracker-header{
+    background-color: var(--Soft-orange);
+}
+.exercise .tracker-header{
+    background-color: var(--Lime-green);
+}
+.social .tracker-header{
+    background-color: var(--Violet);
+}
+.tracker-body{
+    gap: .5rem;
+    border-radius: 16px;
+    margin-top: 3.5rem;
+    z-index: 1;
+    background-color: var(--Dark-blue);
+    grid-row: 1;
+    grid-column: 1;
+    padding: 2rem;
+    display: grid;
+    grid-template-areas: "title"
+                         "time"
+                         "prev";
+}
+
+.tracker-title{
+    grid-area: title;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.tracker-time{
+    grid-area: time;
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+.tracker-prev-frame{
+    grid-area: prev;
+    color: var(--Pale-Blue);
+}
+
+
+@media screen and (max-width:768px) {
+    .tracker-body{
+        margin-top: 3rem;
+        grid-template-areas: "title title"
+                             "time prev";
+ 
+        align-items: center;
+        justify-content: space-between;
+    }
+    .tracker-time{
+        margin-top: 0;
+        font-size: 2rem;
+    }
+}

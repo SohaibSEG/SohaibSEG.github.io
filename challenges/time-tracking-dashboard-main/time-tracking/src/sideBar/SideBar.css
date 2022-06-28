@@ -1,0 +1,90 @@
+.sidebar{
+    display: grid;
+    grid-template-areas: "cell";
+    width: min(100% - 1rem,20rem);
+    border-radius: 16px;
+    overflow: hidden;
+    height: 100%;
+}
+.profile{
+    line-height: 1.5;
+    border-radius: 16px;
+    z-index: 1;
+    grid-area: cell;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    gap: .25rem;
+    padding: 1.5rem;
+    background-color: var(--Blue);
+    margin-bottom: 9.5rem;
+    padding-top: 2rem;
+}
+.profile img{
+    margin-bottom: 2rem;
+    grid-area: avatar;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+.username{
+    line-height: 1;
+    font-weight: 300;
+    font-size: 2.5rem;
+    color: white;
+}
+.text{
+    grid-area: text;
+}
+.f-name{
+    grid-area: f-name;
+}
+.l-name{
+    grid-area: l-name;
+}
+.nav{
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: var(--Dark-blue);
+    display: flex;
+    gap: 1.25rem;
+    padding: 1.5rem;
+    z-index: 0;
+    grid-area: cell;
+}
+.nav-link{
+    color: var(--Desaturated-blue);
+    cursor: pointer;
+}
+.nav-link.active{
+    color: white;
+}
+
+@media screen and (max-width:768px) {
+    .profile{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,fit-content()); 
+        grid-template-areas: "avatar text ..."
+                             "avatar f-name l-name";
+        padding-bottom: 2rem;
+        margin-bottom: 4rem;
+        align-items: center;
+        justify-items: center;
+                            }
+    .nav{
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-end;
+    }
+    .username{
+        font-size: 1.5rem;
+        align-self: flex-start;
+    }
+    .text{
+        align-self: flex-end;
+    }
+    .profile img{
+        margin-bottom: 0;
+    }
+}
