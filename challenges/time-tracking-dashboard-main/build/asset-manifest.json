@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/challenges/time-tracking-dashboard-main/static/css/main.185de018.css",
+    "main.js": "/challenges/time-tracking-dashboard-main/static/js/main.4235e8d9.js",
+    "index.html": "/challenges/time-tracking-dashboard-main/index.html",
+    "main.185de018.css.map": "/challenges/time-tracking-dashboard-main/static/css/main.185de018.css.map",
+    "main.4235e8d9.js.map": "/challenges/time-tracking-dashboard-main/static/js/main.4235e8d9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.185de018.css",
+    "static/js/main.4235e8d9.js"
+  ]
+}
