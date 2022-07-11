@@ -1,8 +1,0 @@
-.App{
-  display: flex;
-  gap: 1rem;
-  align-items: flex-start;
-  width: min(100% - 2rem , 85rem);
-  margin: auto;
-  margin-top: 4rem;
-}
